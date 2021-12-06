@@ -152,37 +152,49 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-我的第一篇博客文章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-markdownFile" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/12/05/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">我的第一篇博客文章</a>
+      <a class="article-title" href="/2021/12/06/markdownFile/">个人博客网站搭建</a>
     </h1>
   
 
         
-        <a href="/2021/12/05/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" class="archive-article-date">
-  	<time datetime="2021-12-05T04:25:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-12-05</time>
+        <a href="/2021/12/06/markdownFile/" class="archive-article-date">
+  	<time datetime="2021-12-06T12:59:26.962Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-12-06</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>##第一章</p>
-<p>内容</p>
-<hr>
-<p>##第二章</p>
-<p>内容</p>
-<hr>
-<p>##第三章</p>
-<p>内容</p>
-<hr>
-<p>##参考文献</p>
-<p><a target="_blank" rel="noopener" href="http://www.codesheep.cn/">www.codesheep.cn</a></p>
+        <h4 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h4><p>==通过Git将Hexo博客部署到服务器 #F44336==：</p>
+<p>==安装node.js #673AB7==：<br><a target="_blank" rel="noopener" href="https://nodejs.org/">https://nodejs.org</a></p>
+<p>node -v<br>npm -v</p>
+<p>借助npm包管理器安装hexo博客框架<br>国内镜像源速度慢，一般利用npm安装淘宝源cnpm<br>npm install -g cnpm –registry=<a target="_blank" rel="noopener" href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org</a></p>
+<p>cnpm -v<br>cnpm</p>
+<p>cnpm install -g hexo-cli<br>hexo -v</p>
+<p>mkdir blog<br>cd blog</p>
+<p>hexo init<br>hexo s</p>
+<p>hexo n “我的第一篇博客文章”<br>dir<br>cd source_posts</p>
+<p>hexo clean<br>hexo g<br>hexo s</p>
+<p>wangruotian.github.io<br>我的hexo博客</p>
+<p>安装git插件<br>cnpm install –save hexo-deployer-git</p>
+<p>设置_config.yml：<br>deploy:<br>  type: git<br>  repo: git地址<br>  branch: master</p>
+<p>根目录：<br>86157@LAPTOP-JGM34KH3 MINGW64 ~/blog<br>$ git init<br>Initialized empty Git repository in C:/Users/86157/blog/.git/</p>
+<p>86157@LAPTOP-JGM34KH3 MINGW64 ~/blog (master)<br>$ hexo d</p>
+<p>换主题：<br>git clone <a target="_blank" rel="noopener" href="https://github.com/litten/hexo-theme-yilia.git">https://github.com/litten/hexo-theme-yilia.git</a> themes/litten</p>
+<p>修改_config.yml：<br>theme: litten</p>
+<p>清理：<br>hexo clean<br>重新生成：<br>hexo g</p>
+<p>推到远端：<br>hexo d</p>
+<h4 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h4><p>==GitHub登录不了 #F44336==：<br>hosts里面配置：<br>140.82.113.4 github.com<br>199.232.69.194 github.global.ssl.fastly.net</p>
+<p>==git配置 #F44336==：<br>git config –global user.name “wangruotian”<br>git config –global user.email “<a href="mailto:&#120;&#x78;&#x78;&#64;&#x31;&#x36;&#x33;&#x2e;&#99;&#x6f;&#x6d;">&#120;&#x78;&#x78;&#64;&#x31;&#x36;&#x33;&#x2e;&#99;&#x6f;&#x6d;</a>“<br>ssh-keygen -t rsa -C “<a href="mailto:&#x78;&#x78;&#x78;&#64;&#49;&#x36;&#x33;&#x2e;&#x63;&#x6f;&#x6d;">&#x78;&#x78;&#x78;&#64;&#49;&#x36;&#x33;&#x2e;&#x63;&#x6f;&#x6d;</a>“</p>
+<p>git init</p>
+<h4 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h4><p><a target="_blank" rel="noopener" href="https://r2coding.com/">https://r2coding.com</a></p>
 
       
 
@@ -191,11 +203,33 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">hexo,博客,个人博客网站搭建</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/wangrt-日记-2021-12//" class="article-tag-list-link color4">/wangrt/日记/2021-12</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2021/12/05/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">展开全文 >></a>
+          <a class="article-more-a" href="/2021/12/06/markdownFile/">展开全文 >></a>
         </p>
       
 
@@ -391,6 +425,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">hexo,博客,个人博客网站搭建</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
